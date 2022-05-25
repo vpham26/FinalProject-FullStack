@@ -1,31 +1,161 @@
-# Ecommerce-website-MERN - [Live Webite]()
+
+# Peace
+
+Peace is an E-Commerce application that consists of products and accessories related to Medical Marijuana.
+
+## Techonology Stack
+
+- React - Reducer + Context
+- React Router v6 (beta) for routes
+- Express & Node for API
+- MongoDB using mongoose for data storage
+- Jest test cases for utils and reducer
+
+## Functionalities 
+
+1. Products listing and detail
+
+   - List of products - fetched via ExpressAPI
+   - Product detail page
+   - Search for products
+   - Wishlist button
+   - Add to cart button
+   - Increment/decrement quantity for products added to cart. (Go to cart)
+   - Sort by Price
+   - Filters as follows:
+     - Exclude "out of stock" products (Greyed out | Cannot be added to cart)
+     - Show fast delivery products
+     - Price range of products
+     - Category & Brands
+
+2. Cart
+
+   - Cart item list
+   - Remove item from cart
+   - Increment/decrement item quantity on cart
+   - Move from cart to wishlist
+   - Total items present in the cart with the overall cost
+   - Checkout to address data management
+   - Payment integration using Stripe
+
+3. Wishlist
+
+   - Wishlist item list
+   - Remove from wishlist
+   - Move from wishlist to cart
+
+4. Authentication using JWT
+   - Login form - existing users
+   - Private route - wishlist and checkout
+   - Sign up - new users
+   - Persist login state
+   - Data stored on MongoDB
+
+### Enchancements
+
+- Add query params for filters.
+- Delete individual product from cart.
+
+## Live link and demo
+
+[Deployed link]()
 
 
-An Real-time Scallable Ecommerce website made with React /  React-Router / Redux / Express.js / Node.js / MongoDB
 
-### Functionalities of the Website:- 
-- Real-time payment with Paypal or Debit / Credit cards.
-- Sign up and login
-- User can add/remove products to/from the cart.
-- Authentication JWT with Web Token 
-- Admin authentication for admin view 
-- search functionality.
-- Paging for more than 8 products on a page.
-- Products fetched by Database in real-time (MongoDB)
-- Sessions maintained, if the user refreshes the page, the session will only be terminated only when log out is used.
-- User A's added product in the cart does not affect user B's cart status and vice versa (Multiple User sign up should be possible).
-- Logout when the user wants to logout, cart status must be saved as the user has left it prior to logout.
-- Client can see their old orders and can change there accounts details like name, email and password at the website only.
-- Admin Information System: This allows admin to manage orders, users and products by giving the feature to edit remove and add these things.
+## Test user credentials
 
+**Username:** Tester
 
-### Future update plans:
-- To add animation in the website
-- UPI integration.
-- add new features 
+**Password:** Testing1
 
-## Customer View:
-![Image]()
+# Instructions on using SupMart locally.
 
-## Admin View:
-![Image]()
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This starter kit could be installed in 2 ways.
+
+1. Clone this repository and start working on the development.
+2. Using [degit](https://github.com/Rich-Harris/degit).
+
+### Instructions while using degit
+
+degit installation:
+
+```bash
+npm install -g degit
+```
+
+Follow the below instructions to use this starter kit:
+
+```
+cd my-app-name
+
+npm install
+```
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
